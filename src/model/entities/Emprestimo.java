@@ -5,20 +5,30 @@ import java.util.Date;
 import java.util.List;
 
 public class Emprestimo {
-
+	
+	private static int SEQUENCIAL = 1;
+	
 	private Integer codigoEmprestimo;
 	private Integer numeroDeParcelas;
 	private Double valorDoEmprestimo;
 	private Date dataInicial;
 
 	List<ParcelasEmprestimo> parcelasEmprestimo = new ArrayList<>();
-	
-	public Emprestimo() {
-	}
 
 	public Emprestimo(Integer codigoEmprestimo, Integer numeroDeParcelas, Double valorDoEmprestimo, Date dataInicial) {
-		this.codigoEmprestimo = codigoEmprestimo;
+		this.codigoEmprestimo = SEQUENCIAL++;
 		this.numeroDeParcelas = numeroDeParcelas;
+		this.valorDoEmprestimo = valorDoEmprestimo;
+		this.dataInicial = dataInicial;
+	}
+	
+	public Emprestimo(Integer numeroDeParcelas, Double valorDoEmprestimo, Date dataInicial) {
+		this.numeroDeParcelas = numeroDeParcelas;
+		this.valorDoEmprestimo = valorDoEmprestimo;
+		this.dataInicial = dataInicial;
+	}
+	
+	public Emprestimo(Double valorDoEmprestimo, Date dataInicial) {
 		this.valorDoEmprestimo = valorDoEmprestimo;
 		this.dataInicial = dataInicial;
 	}
@@ -66,5 +76,11 @@ public class Emprestimo {
 	
 	public void removeParcelasEmprestimo(ParcelasEmprestimo parcelaEmprestimo) {
 		parcelasEmprestimo.remove(parcelaEmprestimo);
+	}
+
+	@Override
+	public String toString() {
+		return "Emprestimo [codigoEmprestimo=" + codigoEmprestimo + ", numeroDeParcelas=" + numeroDeParcelas
+				+ ", valorDoEmprestimo=" + valorDoEmprestimo + "]";
 	}
 }

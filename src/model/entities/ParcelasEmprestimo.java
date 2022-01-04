@@ -3,7 +3,7 @@ package model.entities;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class ParcelasEmprestimo extends Emprestimo {
+public class ParcelasEmprestimo {
 	
 	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
@@ -29,5 +29,10 @@ public class ParcelasEmprestimo extends Emprestimo {
 
 	public void setValorDaParcela(Double valorDaParcela) {
 		this.valorDaParcela = valorDaParcela;
+	}
+	
+	@Override
+	public String toString() {
+		return sdf.format(dataDeVencimento) + " - " + String.format("%.2f", valorDaParcela);	
 	}
 }

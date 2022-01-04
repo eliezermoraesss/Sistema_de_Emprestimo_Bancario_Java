@@ -18,7 +18,7 @@ public class ServicoEmprestimo {
 		double valorParcelaSemJuros = emprestimo.getValorDoEmprestimo() / meses;
 		for (int i = 1; i <= meses; i++) {
 			Date data = addMeses(emprestimo.getDataInicial(), i);
-			double valorAtualizadoComJuros = valorParcelaSemJuros + servicoTaxaMensalEmprestimo.taxaDeJurosMensal(valorParcelaSemJuros, i);
+			double valorAtualizadoComJuros = valorParcelaSemJuros + servicoTaxaMensalEmprestimo.taxaDeJurosMensal(valorParcelaSemJuros);
 			emprestimo.addParcelasEmprestimo(new ParcelasEmprestimo(data, valorAtualizadoComJuros));
 		}
 	}

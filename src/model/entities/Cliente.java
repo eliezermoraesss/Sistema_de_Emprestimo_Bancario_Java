@@ -2,6 +2,7 @@ package model.entities;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Cliente {
 
@@ -11,13 +12,9 @@ public class Cliente {
 	private String rg;
 	private Double renda;
 	private String senha;
-
 	private Endereco endereco;
 
 	List<Emprestimo> emprestimos = new ArrayList<>();
-
-	public Cliente() {
-	}
 
 	public Cliente(String name, String email, String cpf, String rg, Double renda, String senha, Endereco endereco) {
 		this.name = name;
@@ -28,6 +25,13 @@ public class Cliente {
 		this.senha = senha;
 		this.endereco = endereco;
 	}
+	
+	public Cliente(String email, String senha) {
+		this.email = email;
+		this.senha = senha;
+	}
+
+
 
 	public String getName() {
 		return name;
@@ -96,5 +100,22 @@ public class Cliente {
 
 	public void removeEmprestimo(Emprestimo emprestimo) {
 		emprestimos.remove(emprestimo);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(email, senha);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cliente other = (Cliente) obj;
+		return Objects.equals(email, other.email) && Objects.equals(senha, other.senha);
 	}
 }
