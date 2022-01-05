@@ -13,8 +13,10 @@ public class Cliente {
 	private Double renda;
 	private String senha;
 	private Endereco endereco;
-
-	List<Emprestimo> emprestimos = new ArrayList<>();
+	private List<Emprestimo> emprestimos = new ArrayList<>();
+	
+	public Cliente() {
+	}
 
 	public Cliente(String name, String email, String cpf, String rg, Double renda, String senha, Endereco endereco) {
 		this.name = name;
@@ -30,9 +32,7 @@ public class Cliente {
 		this.email = email;
 		this.senha = senha;
 	}
-
-
-
+	
 	public String getName() {
 		return name;
 	}
@@ -100,6 +100,11 @@ public class Cliente {
 
 	public void removeEmprestimo(Emprestimo emprestimo) {
 		emprestimos.remove(emprestimo);
+	}
+	
+	@Override
+	public String toString() {
+		return emprestimos.toString();
 	}
 
 	@Override

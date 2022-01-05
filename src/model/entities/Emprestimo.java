@@ -5,29 +5,31 @@ import java.util.Date;
 import java.util.List;
 
 public class Emprestimo {
-	
-	private static int SEQUENCIAL = 1;
-	
+
+	//private static int SEQUENCIAL = 1;
+
 	private Integer codigoEmprestimo;
 	private Integer numeroDeParcelas;
 	private Double valorDoEmprestimo;
 	private Date dataInicial;
+	private List<Parcelas> parcelas = new ArrayList<>();
 
-	List<ParcelasEmprestimo> parcelasEmprestimo = new ArrayList<>();
+	public Emprestimo() {
+	}
 
 	public Emprestimo(Integer codigoEmprestimo, Integer numeroDeParcelas, Double valorDoEmprestimo, Date dataInicial) {
-		this.codigoEmprestimo = SEQUENCIAL++;
+		this.codigoEmprestimo = codigoEmprestimo;
 		this.numeroDeParcelas = numeroDeParcelas;
 		this.valorDoEmprestimo = valorDoEmprestimo;
 		this.dataInicial = dataInicial;
 	}
-	
+
 	public Emprestimo(Integer numeroDeParcelas, Double valorDoEmprestimo, Date dataInicial) {
 		this.numeroDeParcelas = numeroDeParcelas;
 		this.valorDoEmprestimo = valorDoEmprestimo;
 		this.dataInicial = dataInicial;
 	}
-	
+
 	public Emprestimo(Double valorDoEmprestimo, Date dataInicial) {
 		this.valorDoEmprestimo = valorDoEmprestimo;
 		this.dataInicial = dataInicial;
@@ -64,23 +66,21 @@ public class Emprestimo {
 	public void setDataInicial(Date dataInicial) {
 		this.dataInicial = dataInicial;
 	}
-	
-	public List<ParcelasEmprestimo> getParcelasEmprestimo() {
-		return parcelasEmprestimo;
+
+	public List<Parcelas> getParcelas() {
+		return parcelas;
 	}
-	
-	public void addParcelasEmprestimo(ParcelasEmprestimo parcelaEmprestimo) {
-		parcelasEmprestimo.add(parcelaEmprestimo);
-		
+
+	public void addParcelas(Parcelas parcela) {
+		parcelas.add(parcela);
 	}
-	
-	public void removeParcelasEmprestimo(ParcelasEmprestimo parcelaEmprestimo) {
-		parcelasEmprestimo.remove(parcelaEmprestimo);
+
+	public void removeParcelas(Parcelas parcela) {
+		parcelas.remove(parcela);
 	}
 
 	@Override
 	public String toString() {
-		return "Emprestimo [codigoEmprestimo=" + codigoEmprestimo + ", numeroDeParcelas=" + numeroDeParcelas
-				+ ", valorDoEmprestimo=" + valorDoEmprestimo + "]";
+		return "Código: " + codigoEmprestimo + ", Valor do emprestimo: " + valorDoEmprestimo + ", Quantidade de parcelas: " + numeroDeParcelas;
 	}
 }

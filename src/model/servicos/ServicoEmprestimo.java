@@ -4,7 +4,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 import model.entities.Emprestimo;
-import model.entities.ParcelasEmprestimo;
+import model.entities.Parcelas;
 
 public class ServicoEmprestimo {
 
@@ -19,7 +19,7 @@ public class ServicoEmprestimo {
 		for (int i = 1; i <= meses; i++) {
 			Date data = addMeses(emprestimo.getDataInicial(), i);
 			double valorAtualizadoComJuros = valorParcelaSemJuros + servicoTaxaMensalEmprestimo.taxaDeJurosMensal(valorParcelaSemJuros);
-			emprestimo.addParcelasEmprestimo(new ParcelasEmprestimo(data, valorAtualizadoComJuros));
+			emprestimo.addParcelas(new Parcelas(data, valorAtualizadoComJuros));
 		}
 	}
 
@@ -29,5 +29,4 @@ public class ServicoEmprestimo {
 		cal.add(Calendar.MONTH, n);
 		return cal.getTime();
 	}
-
 }
