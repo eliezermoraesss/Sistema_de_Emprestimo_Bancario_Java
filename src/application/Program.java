@@ -97,22 +97,35 @@ public class Program {
 							System.out.print("Digite o número de parcelas: ");
 							numeroDeParcelas = sc.nextInt();
 							sc.nextLine();
-							testeParcela = (numeroDeParcelas <= 60) ? false : true; // Operação ternária para condição de quantidade de parcelas permitidas.
+							testeParcela = (numeroDeParcelas <= 60) ? false : true; // Lógica da condição de quantidade
+																					// máxima de parcelas permitidas,
+																					// conforme regra de negócio.
 							if (numeroDeParcelas > 60) {
 								System.out.println("Número de parcelas excedido. Parcelamento de no máximo 60 vezes.");
 							}
 						}
 						System.out.print("Digite o valor do empréstimo: ");
 						double valorDoEmprestimo = sc.nextDouble();
+
 						System.out.print(
 								"Qual a data da primeira parcela? (dd/MM/yyyy) (máximo de 3 meses após o dia atual - "
 										+ sdf.format(dataSistema) + ": ");
 						Date dataMaximaParcela = sdf.parse(sc.next());
-
-						DiferencaDatas diferencaDatas = new DiferencaDatas();
-						diferencaDatas.diferencaDatas(dataMaximaParcela);
+						DiferencaDatas data = new DiferencaDatas();
+						long diasPrimeiraParcela = data.diferencaDatas(dataMaximaParcela); // Classe utilitária para
+																							// verificar a data da
+																							// primeira parcela 3 meses
+																							// após a data atual,
+																							// conforme regra de negócio
+						System.out.println(diasPrimeiraParcela);
 
 						Emprestimo emprestimoParcelas = new Emprestimo(valorDoEmprestimo, dataMaximaParcela); // Sobrecarga
+																												// para
+																												// gerar
+																												// a
+																												// lista
+																												// de
+																												// parcelas.
 						Emprestimo emprestimo = new Emprestimo(codEmprestimo, numeroDeParcelas, valorDoEmprestimo,
 								dataMaximaParcela);
 
