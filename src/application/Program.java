@@ -40,35 +40,39 @@ public class Program {
 				System.out.print("Já é cliente TQI? (s/n) ");
 				resposta = sc.next().charAt(0);
 				sc.nextLine();
+				System.out.println();
 
 				if (resposta == 'n') {
 					System.out.println("********** Cadastro de novo cliente **********\n");
 					System.out.print("1. Nome completo: ");
 					String nome = sc.nextLine();
-					System.out.print("2. CPF (somente números): ");
+					System.out.print("2. CPF: ");
 					String cpf = sc.nextLine();
-					System.out.print("Digite o seu RG (somente números): ");
+					System.out.print("3. Digite o seu RG: ");
 					String rg = sc.nextLine();
-					System.out.print("Qual a sua renda mensal? ");
+					System.out.print("4. Qual a sua renda mensal? ");
 					double renda = sc.nextDouble();
 					sc.nextLine();
-					System.out.print("Digite o seu melhor e-mail: ");
+					System.out.print("5. Digite o seu melhor e-mail: ");
 					String email = sc.nextLine();
-					System.out.print("Digite uma senha (mínimo 6 dígitos): ");
+					System.out.print("6. Digite uma senha segura (mínimo 6 dígitos): ");
 					String senha = sc.nextLine();
+					if (senha.length() < 6) {
+						throw new DomainException("Digite no mínimo 6 dígitos.");
+					}
 					System.out.println("Endereço");
-					System.out.print("Rua: ");
+					System.out.print("1. Rua: ");
 					String rua = sc.nextLine();
-					System.out.print("Número: ");
+					System.out.print("2. Número: ");
 					int numero = sc.nextInt();
 					sc.nextLine();
-					System.out.print("Bairro: ");
+					System.out.print("3. Bairro: ");
 					String bairro = sc.nextLine();
-					System.out.print("Cidade: ");
+					System.out.print("4. Cidade: ");
 					String cidade = sc.nextLine();
-					System.out.print("Estado: ");
+					System.out.print("5. Estado: ");
 					String estado = sc.nextLine();
-					System.out.print("País: ");
+					System.out.print("6. País: ");
 					String pais = sc.nextLine();
 
 					Endereco endereco = new Endereco(rua, numero, bairro, cidade, estado, pais);
@@ -94,7 +98,9 @@ public class Program {
 							numeroDeParcelas = sc.nextInt();
 							sc.nextLine();
 							testeParcela = (numeroDeParcelas <= 60) ? false : true; // Operação ternária para condição de quantidade de parcelas permitidas.
-							
+							if (numeroDeParcelas > 60) {
+								System.out.println("Número de parcelas excedido. Parcelamento de no máximo 60 vezes.");
+							}
 						}
 						System.out.print("Digite o valor do empréstimo: ");
 						double valorDoEmprestimo = sc.nextDouble();
@@ -163,7 +169,7 @@ public class Program {
 		} catch (ParseException e) {
 			System.out.println("Formato de data incorreto. (Exemplo: 28/04/2022)");
 		} catch (DomainException e) {
-			System.out.println("Erro de preenchimento." + e.getMessage());
+			System.out.println("Erro de preenchimento. " + e.getMessage());
 		} catch (RuntimeException e) {
 			System.out.println("Erro de preenchimento. Digite um número.");
 		} finally {
