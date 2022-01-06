@@ -1,4 +1,4 @@
-package model.util;
+package util;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -12,18 +12,6 @@ public class DiferencaDatas {
 	private Date dataMaximaParcela;
 	
 	public DiferencaDatas() {
-	}
-	
-	public DiferencaDatas(Date dataMaximaParcela) {
-		this.dataMaximaParcela = dataMaximaParcela;
-	}
-	
-	public Date getDataMaximaParcela() {
-		return dataMaximaParcela;
-	}
-
-	public void setDataMaximaParcela(Date dataMaximaParcela) {
-		this.dataMaximaParcela = dataMaximaParcela;
 	}
 
 	public long diferencaDatas(Date dataMaximaParcela) {

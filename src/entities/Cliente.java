@@ -1,10 +1,10 @@
-package model.entities;
+package entities;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class Cliente {
+public class Cliente extends Emprestimo {
 
 	private String name;
 	private String email;

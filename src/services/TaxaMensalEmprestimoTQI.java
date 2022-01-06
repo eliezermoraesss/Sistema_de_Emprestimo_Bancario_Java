@@ -1,4 +1,4 @@
-package model.servicos;
+package services;
 
 public class TaxaMensalEmprestimoTQI implements ServicoTaxaMensalEmprestimo {
 	

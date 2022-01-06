@@ -1,10 +1,10 @@
-package model.servicos;
+package services;
 
 import java.util.Calendar;
 import java.util.Date;
 
-import model.entities.Emprestimo;
-import model.entities.Parcelas;
+import entities.Emprestimo;
+import entities.Parcelas;
 
 public class ServicoEmprestimo {
 

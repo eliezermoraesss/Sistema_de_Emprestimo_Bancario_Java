@@ -1,9 +1,9 @@
-package model.servicos;
+package services;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import model.entities.Cliente;
+import entities.Cliente;
 
 public class Autenticacao {
 	
