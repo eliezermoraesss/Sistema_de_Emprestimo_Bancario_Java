@@ -21,25 +21,28 @@ public class Program {
 
 	public static void main(String[] args) {
 
-		boolean loop = true;
-		int codEmprestimo = 0;
-		char resposta;
-
 		Scanner sc = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 		Date dataSistema = new Date();
 
 		List<Cliente> listaDeClientes = new ArrayList<>();
+		
+		boolean loop = true;
+		int codEmprestimo = 0;
+		char resposta;
 
 		try {
 			while (loop) {
 				System.out.println("********** Bem-vindo(a) ao serviço de empréstimos do TQIBank ********** "
 						+ sdf2.format(dataSistema));
 				System.out.println();
-				System.out.print("Já é cliente TQI? (s/n) ");
+				System.out.print("Se já é nosso cliente, digite 's' para acessar a Área do Cliente ou 'n' para Cadastrar-se! (s/n): ");
 				resposta = sc.next().charAt(0);
 				sc.nextLine();
+				if (resposta != 's' && resposta != 'n') {
+					System.out.println("Resposta inválida. Digite 's' para SIM e 'n' para NÃO.");
+				}
 				System.out.println();
 
 				if (resposta == 'n') {
@@ -55,10 +58,10 @@ public class Program {
 					sc.nextLine();
 					System.out.print("5. Digite o seu melhor e-mail: ");
 					String email = sc.nextLine();
-					System.out.print("6. Digite uma senha segura (mínimo 6 dígitos): ");
+					System.out.print("6. Digite uma senha segura (digite no mínimo 8 dígitos): ");
 					String senha = sc.nextLine();
-					if (senha.length() < 6) {
-						throw new DomainException("Digite no mínimo 6 dígitos.");
+					if (senha.length() < 8) {
+						throw new DomainException("Digite no mínimo 8 dígitos.");
 					}
 					System.out.println("Endereço");
 					System.out.print("1. Rua: ");
@@ -74,22 +77,20 @@ public class Program {
 					String estado = sc.nextLine();
 					System.out.print("6. País: ");
 					String pais = sc.nextLine();
-
-					Endereco endereco = new Endereco(rua, numero, bairro, cidade, estado, pais);
-					Cliente cliente = new Cliente(nome, email, cpf, rg, renda, senha, endereco);
-
+					
+					Cliente cliente = new Cliente(nome, email, cpf, rg, renda, senha, new Endereco(rua, numero, bairro, cidade, estado, pais));					
 					listaDeClientes.add(cliente);
+
 					System.out.println();
-					System.out.println("Cliente cadastrado com sucesso!");
-					System.out.println();
-					System.out.println("Deseja efetuar um empréstimo? (s/n) ");
+					System.out.println("********** Cliente cadastrado com sucesso! **********\n");
+					System.out.print("Deseja efetuar um empréstimo? (s/n) ");
 					resposta = sc.next().charAt(0);
 					sc.nextLine();
+					System.out.println();
 
 					while (resposta == 's') {
 						System.out.println("********** Área do cliente **********");
 						System.out.println("********** Solicitação de empréstimo **********\n");
-
 						codEmprestimo++;
 						int numeroDeParcelas = 0;
 						boolean testeParcela = true;
@@ -97,9 +98,9 @@ public class Program {
 							System.out.print("Digite o número de parcelas: ");
 							numeroDeParcelas = sc.nextInt();
 							sc.nextLine();
-							testeParcela = (numeroDeParcelas <= 60) ? false : true; // Lógica da condição de quantidade
-																					// máxima de parcelas permitidas,
-																					// conforme regra de negócio.
+							
+							// Lógica da condição de quantidade máxima de parcelas permitidas, conforme regra de negócio
+							testeParcela = (numeroDeParcelas <= 60) ? false : true;
 							if (numeroDeParcelas > 60) {
 								System.out.println("Número de parcelas excedido. Parcelamento de no máximo 60 vezes.");
 							}
@@ -107,25 +108,16 @@ public class Program {
 						System.out.print("Digite o valor do empréstimo: ");
 						double valorDoEmprestimo = sc.nextDouble();
 
-						System.out.print(
-								"Qual a data da primeira parcela? (dd/MM/yyyy) (máximo de 3 meses após o dia atual - "
+						System.out.print("Qual a data da primeira parcela? (dd/MM/yyyy) (data máxima de 3 meses após o dia atual - "
 										+ sdf.format(dataSistema) + ": ");
 						Date dataMaximaParcela = sdf.parse(sc.next());
+						
+						// Classe utilitária para verificar a data da primeira parcela 3 meses após a data atual, conforme regra de negócio
 						DiferencaDatas data = new DiferencaDatas();
-						long diasPrimeiraParcela = data.diferencaDatas(dataMaximaParcela); // Classe utilitária para
-																							// verificar a data da
-																							// primeira parcela 3 meses
-																							// após a data atual,
-																							// conforme regra de negócio
-						System.out.println(diasPrimeiraParcela);
-
-						Emprestimo emprestimoParcelas = new Emprestimo(valorDoEmprestimo, dataMaximaParcela); // Sobrecarga
-																												// para
-																												// gerar
-																												// a
-																												// lista
-																												// de
-																												// parcelas.
+						data.diferencaDatas(dataMaximaParcela); 																																											 
+						
+						// Sobrecarga paragerar a lista de parcelas
+						Emprestimo emprestimoParcelas = new Emprestimo(valorDoEmprestimo, dataMaximaParcela); 
 						Emprestimo emprestimo = new Emprestimo(codEmprestimo, numeroDeParcelas, valorDoEmprestimo,
 								dataMaximaParcela);
 
@@ -134,20 +126,21 @@ public class Program {
 						ServicoEmprestimo servicoEmprestimo = new ServicoEmprestimo(new TaxaMensalEmprestimoTQI());
 						servicoEmprestimo.processarEmprestimo(emprestimoParcelas, numeroDeParcelas);
 
-						System.out.println("Empréstimo efetuado com sucesso!");
+						// Imprimir lista de parcelas do empréstimo efetuado
+						System.out.println("********** Empréstimo efetuado com sucesso! **********\n"); 
 						System.out.println("Parcelas a serem pagas: ");
 						for (Parcelas p : emprestimoParcelas.getParcelas()) {
 							System.out.println(p);
 						}
-
 						System.out.println();
-
-						for (Emprestimo e : cliente.getEmprestimo()) {
+						
+						System.out.println("********** Listagem de empréstimos feitos pelo cliente **********");
+						for (Emprestimo e : cliente.getEmprestimo()) { 
 							System.out.println(e);
 						}
 						System.out.println();
-
-						System.out.println("Deseja efetuar um novo empréstimo? (s/n) ");
+						
+						System.out.print("Deseja efetuar um novo empréstimo? (s/n) ");
 						resposta = sc.next().charAt(0);
 						sc.nextLine();
 					}
@@ -164,21 +157,22 @@ public class Program {
 					Cliente cliente = new Cliente(email, senha);
 
 					if (listaDeClientes.contains(cliente)) {
-						System.out.println("Acesso permitido!");
+						
+						System.out.println("********** Acesso permitido! **********\n");
+						int posicao = listaDeClientes.size();
 
-						List<Integer> lista = listaDeClientes.stream()
+						List<List<Emprestimo>> lista = listaDeClientes.stream()
 								.filter(f -> (f.getEmail() == email) && (f.getSenha() == senha))
-								.map(m -> m.getCodigoEmprestimo()).collect(Collectors.toList());
+								.map(m -> m.getEmprestimo()).collect(Collectors.toList());
 
 						lista.forEach(System.out::println);
 
 					} else {
-						System.out.println("E-mail e/ou senha incorretos!");
+						System.out.println("********** Acesso negado! E-mail e/ou senha incorretos. **********\n");
 					}
 				}
 				System.out.println();
 			}
-			sc.close();
 		} catch (ParseException e) {
 			System.out.println("Formato de data incorreto. (Exemplo: 28/04/2022)");
 		} catch (DomainException e) {

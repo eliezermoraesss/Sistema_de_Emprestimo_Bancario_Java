@@ -21,21 +21,18 @@ public class DiferencaDatas {
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(dataSistema);
 		cal.add(Calendar.MONTH, 3);
-		dataSistema = cal.getTime();
-
-		// System.out.println(sdf.format(dataSistema)); // Data atual acrescida de 3 meses.
-
+		dataSistema = cal.getTime(); 
+		
+		// Diferença entre a data digitada pelo cliente e a data atual acrescida de 3 meses, convertida pela lógica abaixo para DIAS
 		long dif = dataMaximaParcela.getTime() - dataSistema.getTime();
-
 		TimeUnit time = TimeUnit.DAYS;
 		long diferenca = time.convert(dif, TimeUnit.MILLISECONDS);
-		
-		//System.out.println(diferenca + 1);
 
-		if ((diferenca + 1) <= 0) {
-			return diferenca + 1;
+		if ((diferenca + 1) <= 0 && (diferenca + 1) >= -89) {
+			System.out.println(diferenca + 1);
+			return diferenca + 1; // Soma-se 1 para compensar o 0. Os dias começam com 0 na bibliteca TimeUnit
 		} else {
-			throw new DomainException("Data limite da primeira parcela excedida. A data deve ser menor que " + sdf.format(dataSistema) + ".");
+			throw new DomainException("Data inválida. A data deve estar entre " + sdf.format(new Date()) + " e " + sdf.format(dataSistema) + ".");
 		}
 	}
 }

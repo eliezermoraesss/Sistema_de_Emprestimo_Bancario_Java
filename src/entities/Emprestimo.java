@@ -81,6 +81,6 @@ public class Emprestimo {
 
 	@Override
 	public String toString() {
-		return "Código: " + codigoEmprestimo + ", Valor do emprestimo: " + valorDoEmprestimo + ", Quantidade de parcelas: " + numeroDeParcelas;
+		return "Código: " + codigoEmprestimo + ", Valor do emprestimo: " + String.format("%.2f", valorDoEmprestimo) + ", Quantidade de parcelas: " + numeroDeParcelas;
 	}
 }

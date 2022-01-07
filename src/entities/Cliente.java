@@ -102,10 +102,20 @@ public class Cliente extends Emprestimo {
 		emprestimos.remove(emprestimo);
 	}
 	
-	@Override
-	public String toString() {
-		return emprestimos.toString();
-	}
+	public String imprimirDetalhes() {
+		return "Código: "
+			+ getCodigoEmprestimo() 
+			+ ", Valor do emprestimo: " 
+			+ getValorDoEmprestimo() 
+			+ ", Quantidade de parcelas: " 
+			+ getNumeroDeParcelas()
+			+ ", Email: "
+			+ getEmail()
+			+ ", Renda: "
+			+ getRenda()
+			+ ", Data da primeira parcela: "
+			+getDataInicial();
+	} 
 
 	@Override
 	public int hashCode() {
