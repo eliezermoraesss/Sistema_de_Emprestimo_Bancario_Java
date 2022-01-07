@@ -1,11 +1,11 @@
-package util;
+package model.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import exception.DomainException;
+import model.exception.DomainException;
 
 public class DiferencaDatas {
 
@@ -29,10 +29,20 @@ public class DiferencaDatas {
 		long diferenca = time.convert(dif, TimeUnit.MILLISECONDS);
 
 		if ((diferenca + 1) <= 0 && (diferenca + 1) >= -89) {
-			System.out.println(diferenca + 1);
+			//System.out.println(diferenca + 1);
 			return diferenca + 1; // Soma-se 1 para compensar o 0. Os dias começam com 0 na bibliteca TimeUnit
 		} else {
 			throw new DomainException("Data inválida. A data deve estar entre " + sdf.format(new Date()) + " e " + sdf.format(dataSistema) + ".");
 		}
+	}
+	
+	public Date dataLimite() {
+		
+		Date dataSistema = new Date();
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(dataSistema);
+		cal.add(Calendar.MONTH, 3);
+		return dataSistema = cal.getTime();
+		
 	}
 }

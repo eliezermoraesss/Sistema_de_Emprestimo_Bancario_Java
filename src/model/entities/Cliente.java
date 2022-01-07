@@ -1,4 +1,4 @@
-package entities;
+package model.entities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,6 +6,7 @@ import java.util.Objects;
 
 public class Cliente extends Emprestimo {
 
+	private Long IdCliente;
 	private String name;
 	private String email;
 	private String cpf;
@@ -18,7 +19,8 @@ public class Cliente extends Emprestimo {
 	public Cliente() {
 	}
 
-	public Cliente(String name, String email, String cpf, String rg, Double renda, String senha, Endereco endereco) {
+	public Cliente(Long idCliente, String name, String email, String cpf, String rg, Double renda, String senha, Endereco endereco) {
+		this.IdCliente = idCliente;
 		this.name = name;
 		this.email = email;
 		this.cpf = cpf;
@@ -33,6 +35,14 @@ public class Cliente extends Emprestimo {
 		this.senha = senha;
 	}
 	
+	public Long getIdCliente() {
+		return IdCliente;
+	}
+
+	public void setIdCliente(Long idCliente) {
+		IdCliente = idCliente;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -102,21 +112,6 @@ public class Cliente extends Emprestimo {
 		emprestimos.remove(emprestimo);
 	}
 	
-	public String imprimirDetalhes() {
-		return "Código: "
-			+ getCodigoEmprestimo() 
-			+ ", Valor do emprestimo: " 
-			+ getValorDoEmprestimo() 
-			+ ", Quantidade de parcelas: " 
-			+ getNumeroDeParcelas()
-			+ ", Email: "
-			+ getEmail()
-			+ ", Renda: "
-			+ getRenda()
-			+ ", Data da primeira parcela: "
-			+getDataInicial();
-	} 
-
 	@Override
 	public int hashCode() {
 		return Objects.hash(email, senha);
