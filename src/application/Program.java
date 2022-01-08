@@ -73,7 +73,7 @@ public class Program {
 					// Verifica se o e-mail já existe, ou seja, se já foi cadastrado.
 					if (auth.containsKey(email)) {
 						throw new DomainException(
-								"********** E-mail já cadastrado! :(\n********** Tente novamente! **********\n");
+								"********** E-MAIL JÁ CADASTRADO! :(\n********** TENTE NOVAMENTE. **********\n");
 					}
 
 					System.out.println("Endereço");
@@ -99,7 +99,7 @@ public class Program {
 					auth.put(email.toUpperCase(), idCliente);
 
 					System.out.println();
-					System.out.println("********** Cliente cadastrado com sucesso! :D **********\n");
+					System.out.println("********** CLIENTE CADASTRADO COM SUCESSO! :D **********\n");
 					System.out.print("Deseja efetuar um empréstimo?\nDigite 's' para SIM e 'n' para NÃO: ");
 					resposta = sc.next().charAt(0);
 					sc.nextLine();
@@ -108,6 +108,7 @@ public class Program {
 					while (resposta == 's') {
 						System.out.println("********** Área do cliente **********");
 						System.out.println("********** Solicitação de empréstimo **********\n");
+						System.out.println("---------- TAXA DE 2.77% am ----------\n");
 						codEmprestimo++;
 						int numeroDeParcelas = 0;
 						boolean testeParcela = true;
@@ -194,6 +195,7 @@ public class Program {
 
 								System.out.println("********** Área do cliente **********");
 								System.out.println("********** Solicitação de empréstimo **********\n");
+								System.out.println("---------- TAXA DE 2.77% am ----------\n");
 								codEmprestimo++;
 								int numeroDeParcelas = 0;
 								boolean testeParcela = true;
@@ -252,8 +254,10 @@ public class Program {
 
 								posicao = auth.get(chaveValor.toUpperCase()) - 1L;
 								System.out.println();
-								System.out.println(autenticacao.getClientes().get((int) posicao).getEmprestimo());
-								System.out.println();
+								
+								for (Emprestimo e : autenticacao.getClientes().get((int) posicao).getEmprestimo()) {
+									System.out.println(e);
+								}
 								
 								loop = false;
 
