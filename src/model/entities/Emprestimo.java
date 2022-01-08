@@ -98,8 +98,8 @@ public class Emprestimo {
 	
 	public String detalheEmprestimo() {		
 		
-		return "Código: " 
-		+ codigoEmprestimo 
+		return "Código: ";
+		/*+ codigoEmprestimo 
 		+ " - Valor do emprestimo: " 
 		+ String.format("%.2f", valorDoEmprestimo) 
 		+ " - Quantidade de parcelas: " 
@@ -107,9 +107,9 @@ public class Emprestimo {
 		+ " - Primeira parcela: "
 		+ sdf.format(dataInicial)
 		+ " - Email: "
-		+ cliente.getEmail()
+		+ email
 		+ " - Renda: "
-		+ String.format("%.2f", renda);
+		+ String.format("%.2f", renda);*/
 	}
 
 	@Override

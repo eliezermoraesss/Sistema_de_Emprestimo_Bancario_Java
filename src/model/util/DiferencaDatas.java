@@ -28,8 +28,7 @@ public class DiferencaDatas {
 		TimeUnit time = TimeUnit.DAYS;
 		long diferenca = time.convert(dif, TimeUnit.MILLISECONDS);
 
-		if ((diferenca + 1) <= 0 && (diferenca + 1) >= -89) {
-			//System.out.println(diferenca + 1);
+		if ((diferenca + 1) <= 1 && (diferenca + 1) >= -89) {			
 			return diferenca + 1; // Soma-se 1 para compensar o 0. Os dias começam com 0 na bibliteca TimeUnit
 		} else {
 			throw new DomainException("Data inválida. A data deve estar entre " + sdf.format(new Date()) + " e " + sdf.format(dataSistema) + ".");
