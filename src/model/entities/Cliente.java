@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class Cliente extends Emprestimo {
+public class Cliente{
 
 	private Long IdCliente;
 	private String name;

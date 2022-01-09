@@ -15,7 +15,6 @@ public class Emprestimo {
 	private Date dataInicial;
 	private Double renda;
 	private String email;
-	private Cliente cliente;
 	private List<Parcelas> parcelas = new ArrayList<>();
 
 	public Emprestimo() {

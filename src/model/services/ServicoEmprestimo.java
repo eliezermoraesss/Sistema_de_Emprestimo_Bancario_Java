@@ -23,10 +23,10 @@ public class ServicoEmprestimo {
 		}
 	}
 
-	private Date addMeses(Date data, int n) {
+	private Date addMeses(Date data, int meses) {
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(data);
-		cal.add(Calendar.MONTH, n);
+		cal.add(Calendar.MONTH, meses);
 		return cal.getTime();
 	}
 }

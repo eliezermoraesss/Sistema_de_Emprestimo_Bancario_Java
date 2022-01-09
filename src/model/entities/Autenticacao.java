@@ -1,9 +1,7 @@
-package model.services;
+package model.entities;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import model.entities.Cliente;
 
 public class Autenticacao {
 	
@@ -46,9 +44,5 @@ public class Autenticacao {
 
 	public void removeEmprestimo(Cliente cliente) {
 		clientes.remove(cliente);
-	}
-	
-	public Integer indexAutenticacao() {
-		return null;
 	}
 }

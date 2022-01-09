@@ -7,12 +7,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+import model.entities.Autenticacao;
 import model.entities.Cliente;
 import model.entities.Emprestimo;
 import model.entities.Endereco;
 import model.entities.Parcelas;
 import model.exception.DomainException;
-import model.services.Autenticacao;
 import model.services.ServicoEmprestimo;
 import model.services.TaxaMensalEmprestimoTQI;
 import model.util.DiferencaDatas;
