@@ -35,6 +35,7 @@ public class DiferencaDatas {
 		}
 	}
 	
+	// Método/operação que indica a data limite para o vencimento da primeira parcela, conforme REGRA DE NEGÓCIO
 	public Date dataLimite() {
 		
 		Date dataSistema = new Date();

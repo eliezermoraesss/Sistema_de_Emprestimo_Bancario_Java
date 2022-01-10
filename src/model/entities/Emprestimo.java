@@ -94,22 +94,6 @@ public class Emprestimo {
 	public void removeParcelas(Parcelas parcela) {
 		parcelas.remove(parcela);
 	}
-	
-	public String detalheEmprestimo() {		
-		
-		return "Código: ";
-		/*+ codigoEmprestimo 
-		+ " - Valor do emprestimo: " 
-		+ String.format("%.2f", valorDoEmprestimo) 
-		+ " - Quantidade de parcelas: " 
-		+ numeroDeParcelas
-		+ " - Primeira parcela: "
-		+ sdf.format(dataInicial)
-		+ " - Email: "
-		+ email
-		+ " - Renda: "
-		+ String.format("%.2f", renda);*/
-	}
 
 	@Override
 	public String toString() {
