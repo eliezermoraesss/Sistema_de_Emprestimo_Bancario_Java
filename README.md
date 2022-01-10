@@ -1,8 +1,8 @@
-# TQI EVOLUTION BACKEND JAVA 2021
-## Projeto desenvolvido por Eliezer Moraes Silva <br>
-## [LinkedIn](https://www.linkedin.com/in/eliezer-moraes-silva-80b68010b/)
+# 🚀 TQI EVOLUTION BACKEND JAVA 2021
+## 📚 Projeto desenvolvido por Eliezer Moraes Silva <br>
+## 👔 [LinkedIn](https://www.linkedin.com/in/eliezer-moraes-silva-80b68010b/)
 
-## SISTEMA DE EMPRÉSTIMO BANCÁRIO
+## 💰 SISTEMA DE EMPRÉSTIMO BANCÁRIO
 
 Projeto desenvolvido com muita dedicação e carinho para atender as regras de negócio descritas abaixo. <br>
 
