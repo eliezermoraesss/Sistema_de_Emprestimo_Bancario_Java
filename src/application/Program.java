@@ -60,7 +60,7 @@ public class Program {
 					String cpf = sc.nextLine();
 					System.out.print("3. RG (somente números): ");
 					String rg = sc.nextLine();
-					System.out.print("4. Qual a sua renda mensal? (somente números) R$ ");
+					System.out.print("4. Qual a sua renda mensal? (R$ 0000,00) R$ ");
 					renda = sc.nextDouble();
 					sc.nextLine();
 					System.out.print("5. Digite o seu melhor e-mail: ");
@@ -114,7 +114,7 @@ public class Program {
 					while (resposta == 's') {
 						System.out.println("********** Área do cliente **********");
 						System.out.println("********** Solicitação de empréstimo **********\n");
-						System.out.println("---------- TAXA DE 2.77% am ----------\n");
+						System.out.println("---------- TAXA DE 2,77% am ----------\n");
 						codEmprestimo++;
 						int numeroDeParcelas = 0;
 						boolean testeParcela = true;
@@ -129,7 +129,7 @@ public class Program {
 								System.out.println("Número de parcelas excedido. Parcelamento de no máximo 60 vezes.");
 							}
 						}
-						System.out.print("Digite o valor do empréstimo (somente números): R$ ");
+						System.out.print("Digite o valor do empréstimo (R$ 0000,00): R$ ");
 						double valorDoEmprestimo = sc.nextDouble();
 						System.out.println();
 						
@@ -193,10 +193,9 @@ public class Program {
 					if (autenticacao.getClientes().contains(cliente)) {
 
 						System.out.println("********** ACESSO EFETUADO COM SUCESSO! **********\n");
-
-						System.out.println(
-								"Deseja efetuar um NOVO EMPRÉSTIMO ou somente VISUALIZAR SUA LISTA DE EMPRÉSTIMO(S)?\n"
-										+ "Digite 'e' para NOVO EMPRÉSTIMO ou 'v' para VISUALIZAR LISTA DE EMPRÉSTIMO(S): ");
+						
+						// Cria novo empréstimo ou exibe a listagem de contrato de empréstimos solicitados pelo cliente, conforme REGRA DE NEGÓCIO
+						System.out.println("Digite 'e' para efetuar um NOVO EMPRÉSTIMO ou 'v' para visualizar sua LISTA DE EMPRÉSTIMO(S): ");
 						resposta = sc.next().charAt(0);
 						sc.nextLine();
 						System.out.println();
@@ -208,7 +207,7 @@ public class Program {
 
 								System.out.println("********** Área do cliente **********");
 								System.out.println("********** Solicitação de empréstimo **********\n");
-								System.out.println("---------- TAXA DE 2.77% am ----------\n");
+								System.out.println("---------- TAXA DE 2,77% am ----------\n");
 								codEmprestimo++;
 								int numeroDeParcelas = 0;
 								boolean testeParcela = true;
@@ -260,8 +259,7 @@ public class Program {
 								}
 								System.out.println();
 
-								System.out.print(
-										"Deseja efetuar um novo empréstimo?\nDigite 'e' para NOVO EMPRÉSTIMO ou 'v' para VISUALIZAR LISTA DE EMPRÉSTIMOS: ");
+								System.out.print("Digite 'e' para efetuar um NOVO EMPRÉSTIMO ou 'v' para visualizar sua LISTA DE EMPRÉSTIMO(S): ");
 								resposta = sc.next().charAt(0);
 								sc.nextLine();
 								System.out.println();
@@ -271,14 +269,16 @@ public class Program {
 								posicao = auth.get(chaveValor.toUpperCase()) - 1L;
 								System.out.println();
 								
+								int posicaoDetalhe = 0;
 								//forEach() para percorrer a lista Empréstimo e imprimir os valores conforme a posição do cliente logado
 								for (Emprestimo e : autenticacao.getClientes().get((int) posicao).getEmprestimo()) {
-									System.out.println(e);
+									System.out.println("POSIÇÃO: " + posicaoDetalhe + " -----> " + e);
+									posicaoDetalhe++;
 								}
 								System.out.println();
 								
 								//DETALHAMENTO DA LISTA DE EMPRÉSTIMO conforme selecionado pelo usuário. REGRA DE NEGÓCIO.
-								System.out.print("Para mais DETALHES, digite o CÓDIGO do contrato de empréstimo: ");
+								System.out.print("Para mais DETALHES, digite a POSIÇÃO do contrato de empréstimo: ");
 								int cod = sc.nextInt();
 								sc.nextLine();
 								System.out.println();

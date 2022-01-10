@@ -97,6 +97,6 @@ public class Emprestimo {
 
 	@Override
 	public String toString() {
-		return "Código: " + codigoEmprestimo + " - Valor do emprestimo: " + String.format("%.2f", valorDoEmprestimo) + " - Quantidade de parcelas: " + numeroDeParcelas;
+		return "Código do Empréstimo: " + codigoEmprestimo + "\nValor do emprestimo: " + String.format("%.2f", valorDoEmprestimo) + "\nQuantidade de parcelas: " + numeroDeParcelas + "\n";
 	}
 }
