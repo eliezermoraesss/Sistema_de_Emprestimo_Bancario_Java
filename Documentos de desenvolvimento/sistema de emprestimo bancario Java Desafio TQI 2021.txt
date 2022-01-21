@@ -1,0 +1,694 @@
+********** Bem-vindo(a) ao serviço de empréstimos do TQIBank ********** 11/01/2022 14:03:57
+---------- Desenvolvedor: Eliezer Moraes Silva ----------
+
+Já é cliente TQI?
+Digite 's' para acessar a ÁREA DO CLIENTE ou 'n' para CADASTRAR-SE: n
+
+********** Cadastro de novo cliente **********
+
+1. Nome completo: e
+2. CPF (somente números): 3
+3. RG (somente números): 3
+4. Qual a sua renda mensal? (R$ 0000,00) R$ 45454
+5. Digite o seu melhor e-mail: e
+6. Digite uma senha segura (digite no mínimo 8 dígitos): 11111111
+
+Endereço
+1. Rua: e
+2. Número: 4
+3. Bairro: e
+4. Cidade: e
+5. Estado: e
+6. País: e
+
+********** CLIENTE CADASTRADO COM SUCESSO! :D **********
+
+Deseja efetuar um empréstimo?
+Digite 's' para SIM e 'n' para NÃO: s
+
+********** Área do cliente **********
+********** Solicitação de empréstimo **********
+
+---------- TAXA DE 2,77% am ----------
+
+Digite o número de parcelas (somente números): 12
+
+Digite o valor do empréstimo (R$ 0000,00): R$ 10000
+
+Qual a data de vencimento da primeira parcela?
+Digite uma data entre 11/01/2022 e 11/04/2022: 11/04/2022
+
+********** EMPRESTIMO EFETUADO COM SUCESSO! **********
+
+Parcelas a serem pagas: 
+11/04/2022 - 856,42
+11/05/2022 - 856,42
+11/06/2022 - 856,42
+11/07/2022 - 856,42
+11/08/2022 - 856,42
+11/09/2022 - 856,42
+11/10/2022 - 856,42
+11/11/2022 - 856,42
+11/12/2022 - 856,42
+11/01/2023 - 856,42
+11/02/2023 - 856,42
+11/03/2023 - 856,42
+
+********** LISTAGEM DE EMPRÉSTIMOS REALIZADOS **********
+
+Código do Empréstimo: 1
+Valor do emprestimo: 10000,00
+Quantidade de parcelas: 12
+
+
+Deseja efetuar um novo empréstimo?
+Digite 's' para SIM e 'n' para NÃO: s
+********** Área do cliente **********
+********** Solicitação de empréstimo **********
+
+---------- TAXA DE 2,77% am ----------
+
+Digite o número de parcelas (somente números): 25
+
+Digite o valor do empréstimo (R$ 0000,00): R$ 34343434
+
+Qual a data de vencimento da primeira parcela?
+Digite uma data entre 11/01/2022 e 11/04/2022: 11/02/2022
+
+********** EMPRESTIMO EFETUADO COM SUCESSO! **********
+
+Parcelas a serem pagas: 
+11/02/2022 - 1411789,88
+11/03/2022 - 1411789,88
+11/04/2022 - 1411789,88
+11/05/2022 - 1411789,88
+11/06/2022 - 1411789,88
+11/07/2022 - 1411789,88
+11/08/2022 - 1411789,88
+11/09/2022 - 1411789,88
+11/10/2022 - 1411789,88
+11/11/2022 - 1411789,88
+11/12/2022 - 1411789,88
+11/01/2023 - 1411789,88
+11/02/2023 - 1411789,88
+11/03/2023 - 1411789,88
+11/04/2023 - 1411789,88
+11/05/2023 - 1411789,88
+11/06/2023 - 1411789,88
+11/07/2023 - 1411789,88
+11/08/2023 - 1411789,88
+11/09/2023 - 1411789,88
+11/10/2023 - 1411789,88
+11/11/2023 - 1411789,88
+11/12/2023 - 1411789,88
+11/01/2024 - 1411789,88
+11/02/2024 - 1411789,88
+
+********** LISTAGEM DE EMPRÉSTIMOS REALIZADOS **********
+
+Código do Empréstimo: 1
+Valor do emprestimo: 10000,00
+Quantidade de parcelas: 12
+
+Código do Empréstimo: 2
+Valor do emprestimo: 34343434,00
+Quantidade de parcelas: 25
+
+
+Deseja efetuar um novo empréstimo?
+Digite 's' para SIM e 'n' para NÃO: n
+
+********** Bem-vindo(a) ao serviço de empréstimos do TQIBank ********** 11/01/2022 14:03:57
+---------- Desenvolvedor: Eliezer Moraes Silva ----------
+
+Já é cliente TQI?
+Digite 's' para acessar a ÁREA DO CLIENTE ou 'n' para CADASTRAR-SE: n
+
+********** Cadastro de novo cliente **********
+
+1. Nome completo: f
+2. CPF (somente números): 4
+3. RG (somente números): 5
+4. Qual a sua renda mensal? (R$ 0000,00) R$ 787878
+5. Digite o seu melhor e-mail: f
+6. Digite uma senha segura (digite no mínimo 8 dígitos): 11111111
+
+Endereço
+1. Rua: d
+2. Número: 6
+3. Bairro: g
+4. Cidade: g
+5. Estado: g
+6. País: j
+
+********** CLIENTE CADASTRADO COM SUCESSO! :D **********
+
+Deseja efetuar um empréstimo?
+Digite 's' para SIM e 'n' para NÃO: s
+
+********** Área do cliente **********
+********** Solicitação de empréstimo **********
+
+---------- TAXA DE 2,77% am ----------
+
+Digite o número de parcelas (somente números): 12
+
+Digite o valor do empréstimo (R$ 0000,00): R$ 258741
+
+Qual a data de vencimento da primeira parcela?
+Digite uma data entre 11/01/2022 e 11/04/2022: 05/03/2022
+
+********** EMPRESTIMO EFETUADO COM SUCESSO! **********
+
+Parcelas a serem pagas: 
+05/03/2022 - 22159,01
+05/04/2022 - 22159,01
+05/05/2022 - 22159,01
+05/06/2022 - 22159,01
+05/07/2022 - 22159,01
+05/08/2022 - 22159,01
+05/09/2022 - 22159,01
+05/10/2022 - 22159,01
+05/11/2022 - 22159,01
+05/12/2022 - 22159,01
+05/01/2023 - 22159,01
+05/02/2023 - 22159,01
+
+********** LISTAGEM DE EMPRÉSTIMOS REALIZADOS **********
+
+Código do Empréstimo: 3
+Valor do emprestimo: 258741,00
+Quantidade de parcelas: 12
+
+
+Deseja efetuar um novo empréstimo?
+Digite 's' para SIM e 'n' para NÃO: s
+********** Área do cliente **********
+********** Solicitação de empréstimo **********
+
+---------- TAXA DE 2,77% am ----------
+
+Digite o número de parcelas (somente números): 45
+
+Digite o valor do empréstimo (R$ 0000,00): R$ 2587410
+
+Qual a data de vencimento da primeira parcela?
+Digite uma data entre 11/01/2022 e 11/04/2022: 18/02/2022
+
+********** EMPRESTIMO EFETUADO COM SUCESSO! **********
+
+Parcelas a serem pagas: 
+18/02/2022 - 59090,69
+18/03/2022 - 59090,69
+18/04/2022 - 59090,69
+18/05/2022 - 59090,69
+18/06/2022 - 59090,69
+18/07/2022 - 59090,69
+18/08/2022 - 59090,69
+18/09/2022 - 59090,69
+18/10/2022 - 59090,69
+18/11/2022 - 59090,69
+18/12/2022 - 59090,69
+18/01/2023 - 59090,69
+18/02/2023 - 59090,69
+18/03/2023 - 59090,69
+18/04/2023 - 59090,69
+18/05/2023 - 59090,69
+18/06/2023 - 59090,69
+18/07/2023 - 59090,69
+18/08/2023 - 59090,69
+18/09/2023 - 59090,69
+18/10/2023 - 59090,69
+18/11/2023 - 59090,69
+18/12/2023 - 59090,69
+18/01/2024 - 59090,69
+18/02/2024 - 59090,69
+18/03/2024 - 59090,69
+18/04/2024 - 59090,69
+18/05/2024 - 59090,69
+18/06/2024 - 59090,69
+18/07/2024 - 59090,69
+18/08/2024 - 59090,69
+18/09/2024 - 59090,69
+18/10/2024 - 59090,69
+18/11/2024 - 59090,69
+18/12/2024 - 59090,69
+18/01/2025 - 59090,69
+18/02/2025 - 59090,69
+18/03/2025 - 59090,69
+18/04/2025 - 59090,69
+18/05/2025 - 59090,69
+18/06/2025 - 59090,69
+18/07/2025 - 59090,69
+18/08/2025 - 59090,69
+18/09/2025 - 59090,69
+18/10/2025 - 59090,69
+
+********** LISTAGEM DE EMPRÉSTIMOS REALIZADOS **********
+
+Código do Empréstimo: 3
+Valor do emprestimo: 258741,00
+Quantidade de parcelas: 12
+
+Código do Empréstimo: 4
+Valor do emprestimo: 2587410,00
+Quantidade de parcelas: 45
+
+
+Deseja efetuar um novo empréstimo?
+Digite 's' para SIM e 'n' para NÃO: s
+********** Área do cliente **********
+********** Solicitação de empréstimo **********
+
+---------- TAXA DE 2,77% am ----------
+
+Digite o número de parcelas (somente números): 11
+
+Digite o valor do empréstimo (R$ 0000,00): R$ 232323232
+
+Qual a data de vencimento da primeira parcela?
+Digite uma data entre 11/01/2022 e 11/04/2022: 11/01/2022
+
+********** EMPRESTIMO EFETUADO COM SUCESSO! **********
+
+Parcelas a serem pagas: 
+11/01/2022 - 21705325,96
+11/02/2022 - 21705325,96
+11/03/2022 - 21705325,96
+11/04/2022 - 21705325,96
+11/05/2022 - 21705325,96
+11/06/2022 - 21705325,96
+11/07/2022 - 21705325,96
+11/08/2022 - 21705325,96
+11/09/2022 - 21705325,96
+11/10/2022 - 21705325,96
+11/11/2022 - 21705325,96
+
+********** LISTAGEM DE EMPRÉSTIMOS REALIZADOS **********
+
+Código do Empréstimo: 3
+Valor do emprestimo: 258741,00
+Quantidade de parcelas: 12
+
+Código do Empréstimo: 4
+Valor do emprestimo: 2587410,00
+Quantidade de parcelas: 45
+
+Código do Empréstimo: 5
+Valor do emprestimo: 232323232,00
+Quantidade de parcelas: 11
+
+
+Deseja efetuar um novo empréstimo?
+Digite 's' para SIM e 'n' para NÃO: n
+
+********** Bem-vindo(a) ao serviço de empréstimos do TQIBank ********** 11/01/2022 14:03:57
+---------- Desenvolvedor: Eliezer Moraes Silva ----------
+
+Já é cliente TQI?
+Digite 's' para acessar a ÁREA DO CLIENTE ou 'n' para CADASTRAR-SE: g
+Resposta inválida. Digite 's' para SIM e 'n' para NÃO.
+
+
+********** Bem-vindo(a) ao serviço de empréstimos do TQIBank ********** 11/01/2022 14:03:57
+---------- Desenvolvedor: Eliezer Moraes Silva ----------
+
+Já é cliente TQI?
+Digite 's' para acessar a ÁREA DO CLIENTE ou 'n' para CADASTRAR-SE: n
+
+********** Cadastro de novo cliente **********
+
+1. Nome completo: g
+2. CPF (somente números): 3
+3. RG (somente números): 4
+4. Qual a sua renda mensal? (R$ 0000,00) R$ 5555
+5. Digite o seu melhor e-mail: g
+6. Digite uma senha segura (digite no mínimo 8 dígitos): 33333333
+
+Endereço
+1. Rua: f
+2. Número: 6
+3. Bairro: h
+4. Cidade: h
+5. Estado: h
+6. País: h
+
+********** CLIENTE CADASTRADO COM SUCESSO! :D **********
+
+Deseja efetuar um empréstimo?
+Digite 's' para SIM e 'n' para NÃO: s
+
+********** Área do cliente **********
+********** Solicitação de empréstimo **********
+
+---------- TAXA DE 2,77% am ----------
+
+Digite o número de parcelas (somente números): 44
+
+Digite o valor do empréstimo (R$ 0000,00): R$ 2323232
+
+Qual a data de vencimento da primeira parcela?
+Digite uma data entre 11/01/2022 e 11/04/2022: 11/02/2022
+
+********** EMPRESTIMO EFETUADO COM SUCESSO! **********
+
+Parcelas a serem pagas: 
+11/02/2022 - 54263,31
+11/03/2022 - 54263,31
+11/04/2022 - 54263,31
+11/05/2022 - 54263,31
+11/06/2022 - 54263,31
+11/07/2022 - 54263,31
+11/08/2022 - 54263,31
+11/09/2022 - 54263,31
+11/10/2022 - 54263,31
+11/11/2022 - 54263,31
+11/12/2022 - 54263,31
+11/01/2023 - 54263,31
+11/02/2023 - 54263,31
+11/03/2023 - 54263,31
+11/04/2023 - 54263,31
+11/05/2023 - 54263,31
+11/06/2023 - 54263,31
+11/07/2023 - 54263,31
+11/08/2023 - 54263,31
+11/09/2023 - 54263,31
+11/10/2023 - 54263,31
+11/11/2023 - 54263,31
+11/12/2023 - 54263,31
+11/01/2024 - 54263,31
+11/02/2024 - 54263,31
+11/03/2024 - 54263,31
+11/04/2024 - 54263,31
+11/05/2024 - 54263,31
+11/06/2024 - 54263,31
+11/07/2024 - 54263,31
+11/08/2024 - 54263,31
+11/09/2024 - 54263,31
+11/10/2024 - 54263,31
+11/11/2024 - 54263,31
+11/12/2024 - 54263,31
+11/01/2025 - 54263,31
+11/02/2025 - 54263,31
+11/03/2025 - 54263,31
+11/04/2025 - 54263,31
+11/05/2025 - 54263,31
+11/06/2025 - 54263,31
+11/07/2025 - 54263,31
+11/08/2025 - 54263,31
+11/09/2025 - 54263,31
+
+********** LISTAGEM DE EMPRÉSTIMOS REALIZADOS **********
+
+Código do Empréstimo: 6
+Valor do emprestimo: 2323232,00
+Quantidade de parcelas: 44
+
+
+Deseja efetuar um novo empréstimo?
+Digite 's' para SIM e 'n' para NÃO: n
+
+********** Bem-vindo(a) ao serviço de empréstimos do TQIBank ********** 11/01/2022 14:03:57
+---------- Desenvolvedor: Eliezer Moraes Silva ----------
+
+Já é cliente TQI?
+Digite 's' para acessar a ÁREA DO CLIENTE ou 'n' para CADASTRAR-SE: s
+
+********** Área do cliente **********
+
+LOGIN (e-mail): f
+
+SENHA: 22222222
+
+********** ACESSO NEGADO! E-MAIL E/OU SENHA INCORRETOS. **********
+
+
+********** Bem-vindo(a) ao serviço de empréstimos do TQIBank ********** 11/01/2022 14:03:57
+---------- Desenvolvedor: Eliezer Moraes Silva ----------
+
+Já é cliente TQI?
+Digite 's' para acessar a ÁREA DO CLIENTE ou 'n' para CADASTRAR-SE: s
+
+********** Área do cliente **********
+
+LOGIN (e-mail): F
+
+SENHA: 11111111
+
+********** ACESSO EFETUADO COM SUCESSO! **********
+
+Digite 'e' para efetuar um NOVO EMPRÉSTIMO ou 'v' para visualizar sua LISTA DE EMPRÉSTIMO(S): 
+v
+
+
+POSIÇÃO: 0 -----> Código do Empréstimo: 3
+Valor do emprestimo: 258741,00
+Quantidade de parcelas: 12
+
+POSIÇÃO: 1 -----> Código do Empréstimo: 4
+Valor do emprestimo: 2587410,00
+Quantidade de parcelas: 45
+
+POSIÇÃO: 2 -----> Código do Empréstimo: 5
+Valor do emprestimo: 232323232,00
+Quantidade de parcelas: 11
+
+
+Para mais DETALHES, digite a POSIÇÃO do contrato de empréstimo: 2
+
+Código do Empréstimo: 5
+Valor do emprestimo: 232323232,00
+Quantidade de parcelas: 11
+
+Renda: 787878.0
+E-mail: F
+
+********** Bem-vindo(a) ao serviço de empréstimos do TQIBank ********** 11/01/2022 14:03:57
+---------- Desenvolvedor: Eliezer Moraes Silva ----------
+
+Já é cliente TQI?
+Digite 's' para acessar a ÁREA DO CLIENTE ou 'n' para CADASTRAR-SE: s
+
+********** Área do cliente **********
+
+LOGIN (e-mail): e
+
+SENHA: 11111111
+
+********** ACESSO EFETUADO COM SUCESSO! **********
+
+Digite 'e' para efetuar um NOVO EMPRÉSTIMO ou 'v' para visualizar sua LISTA DE EMPRÉSTIMO(S): 
+v
+
+
+POSIÇÃO: 0 -----> Código do Empréstimo: 1
+Valor do emprestimo: 10000,00
+Quantidade de parcelas: 12
+
+POSIÇÃO: 1 -----> Código do Empréstimo: 2
+Valor do emprestimo: 34343434,00
+Quantidade de parcelas: 25
+
+
+Para mais DETALHES, digite a POSIÇÃO do contrato de empréstimo: 0
+
+Código do Empréstimo: 1
+Valor do emprestimo: 10000,00
+Quantidade de parcelas: 12
+
+Renda: 45454.0
+E-mail: E
+
+********** Bem-vindo(a) ao serviço de empréstimos do TQIBank ********** 11/01/2022 14:03:57
+---------- Desenvolvedor: Eliezer Moraes Silva ----------
+
+Já é cliente TQI?
+Digite 's' para acessar a ÁREA DO CLIENTE ou 'n' para CADASTRAR-SE: s
+
+********** Área do cliente **********
+
+LOGIN (e-mail): g
+
+SENHA: 33333333
+
+********** ACESSO EFETUADO COM SUCESSO! **********
+
+Digite 'e' para efetuar um NOVO EMPRÉSTIMO ou 'v' para visualizar sua LISTA DE EMPRÉSTIMO(S): 
+v
+
+
+POSIÇÃO: 0 -----> Código do Empréstimo: 6
+Valor do emprestimo: 2323232,00
+Quantidade de parcelas: 44
+
+
+Para mais DETALHES, digite a POSIÇÃO do contrato de empréstimo: 0
+
+Código do Empréstimo: 6
+Valor do emprestimo: 2323232,00
+Quantidade de parcelas: 44
+
+Renda: 5555.0
+E-mail: G
+
+********** Bem-vindo(a) ao serviço de empréstimos do TQIBank ********** 11/01/2022 14:03:57
+---------- Desenvolvedor: Eliezer Moraes Silva ----------
+
+Já é cliente TQI?
+Digite 's' para acessar a ÁREA DO CLIENTE ou 'n' para CADASTRAR-SE: e
+Resposta inválida. Digite 's' para SIM e 'n' para NÃO.
+
+
+********** Bem-vindo(a) ao serviço de empréstimos do TQIBank ********** 11/01/2022 14:03:57
+---------- Desenvolvedor: Eliezer Moraes Silva ----------
+
+Já é cliente TQI?
+Digite 's' para acessar a ÁREA DO CLIENTE ou 'n' para CADASTRAR-SE: 11111111
+Resposta inválida. Digite 's' para SIM e 'n' para NÃO.
+
+
+********** Bem-vindo(a) ao serviço de empréstimos do TQIBank ********** 11/01/2022 14:03:57
+---------- Desenvolvedor: Eliezer Moraes Silva ----------
+
+Já é cliente TQI?
+Digite 's' para acessar a ÁREA DO CLIENTE ou 'n' para CADASTRAR-SE: s
+
+********** Área do cliente **********
+
+LOGIN (e-mail): e
+
+SENHA: 11111111
+
+********** ACESSO EFETUADO COM SUCESSO! **********
+
+Digite 'e' para efetuar um NOVO EMPRÉSTIMO ou 'v' para visualizar sua LISTA DE EMPRÉSTIMO(S): 
+e
+
+********** Área do cliente **********
+********** Solicitação de empréstimo **********
+
+---------- TAXA DE 2,77% am ----------
+
+Digite o número de parcelas (somente números): 11
+Digite o valor do empréstimo (somente números): R$ 67890
+Qual a data de vencimento da primeira parcela?
+Digite uma data entre 11/01/2022 e 11/04/2022: 18/01/2022
+********** EMPRESTIMO EFETUADO COM SUCESSO! **********
+
+Parcelas a serem pagas: 
+18/01/2022 - 6342,78
+18/02/2022 - 6342,78
+18/03/2022 - 6342,78
+18/04/2022 - 6342,78
+18/05/2022 - 6342,78
+18/06/2022 - 6342,78
+18/07/2022 - 6342,78
+18/08/2022 - 6342,78
+18/09/2022 - 6342,78
+18/10/2022 - 6342,78
+18/11/2022 - 6342,78
+
+Digite 'e' para efetuar um NOVO EMPRÉSTIMO ou 'v' para visualizar sua LISTA DE EMPRÉSTIMO(S): e
+
+********** Área do cliente **********
+********** Solicitação de empréstimo **********
+
+---------- TAXA DE 2,77% am ----------
+
+Digite o número de parcelas (somente números): 9
+Digite o valor do empréstimo (somente números): R$ 5678
+Qual a data de vencimento da primeira parcela?
+Digite uma data entre 11/01/2022 e 11/04/2022: 11/02/2022
+********** EMPRESTIMO EFETUADO COM SUCESSO! **********
+
+Parcelas a serem pagas: 
+11/02/2022 - 648,36
+11/03/2022 - 648,36
+11/04/2022 - 648,36
+11/05/2022 - 648,36
+11/06/2022 - 648,36
+11/07/2022 - 648,36
+11/08/2022 - 648,36
+11/09/2022 - 648,36
+11/10/2022 - 648,36
+
+Digite 'e' para efetuar um NOVO EMPRÉSTIMO ou 'v' para visualizar sua LISTA DE EMPRÉSTIMO(S): v
+
+
+POSIÇÃO: 0 -----> Código do Empréstimo: 1
+Valor do emprestimo: 10000,00
+Quantidade de parcelas: 12
+
+POSIÇÃO: 1 -----> Código do Empréstimo: 2
+Valor do emprestimo: 34343434,00
+Quantidade de parcelas: 25
+
+POSIÇÃO: 2 -----> Código do Empréstimo: 7
+Valor do emprestimo: 67890,00
+Quantidade de parcelas: 11
+
+POSIÇÃO: 3 -----> Código do Empréstimo: 8
+Valor do emprestimo: 5678,00
+Quantidade de parcelas: 9
+
+
+Para mais DETALHES, digite a POSIÇÃO do contrato de empréstimo: 3
+
+Código do Empréstimo: 8
+Valor do emprestimo: 5678,00
+Quantidade de parcelas: 9
+
+Renda: 45454.0
+E-mail: E
+
+********** Bem-vindo(a) ao serviço de empréstimos do TQIBank ********** 11/01/2022 14:03:57
+---------- Desenvolvedor: Eliezer Moraes Silva ----------
+
+Já é cliente TQI?
+Digite 's' para acessar a ÁREA DO CLIENTE ou 'n' para CADASTRAR-SE: n
+
+********** Cadastro de novo cliente **********
+
+1. Nome completo: k
+2. CPF (somente números): k
+3. RG (somente números): k
+4. Qual a sua renda mensal? (R$ 0000,00) R$ 5
+5. Digite o seu melhor e-mail: k
+6. Digite uma senha segura (digite no mínimo 8 dígitos): 66666666
+
+Endereço
+1. Rua: g
+2. Número: 6
+3. Bairro: h
+4. Cidade: h
+5. Estado: h
+6. País: h
+
+********** CLIENTE CADASTRADO COM SUCESSO! :D **********
+
+Deseja efetuar um empréstimo?
+Digite 's' para SIM e 'n' para NÃO: n
+
+
+********** Bem-vindo(a) ao serviço de empréstimos do TQIBank ********** 11/01/2022 14:03:57
+---------- Desenvolvedor: Eliezer Moraes Silva ----------
+
+Já é cliente TQI?
+Digite 's' para acessar a ÁREA DO CLIENTE ou 'n' para CADASTRAR-SE: s
+
+********** Área do cliente **********
+
+LOGIN (e-mail): k
+
+SENHA: 66666666
+
+********** ACESSO EFETUADO COM SUCESSO! **********
+
+Digite 'e' para efetuar um NOVO EMPRÉSTIMO ou 'v' para visualizar sua LISTA DE EMPRÉSTIMO(S): 
+v
+
+
+
+Para mais DETALHES, digite a POSIÇÃO do contrato de empréstimo: 0
+
+Erro inesperado!
